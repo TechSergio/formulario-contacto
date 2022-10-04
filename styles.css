@@ -2,7 +2,7 @@ body {
     width:100%; 
     height: 100vh;
     margin: 0; /* a el efecto de fondo opaco en la imagen */
-
+    background-size: cover;
     /* a el efecto de fondo opaco en la imagen */
     background-image:linear-gradient(
         115deg,
@@ -12,12 +12,82 @@ body {
     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     
     color:#ffffff;
-    font-family: 'Tahoma';
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
 
 }
 
-label{
+label {
     display:block;
     margin: 0.5rem 0;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    font-size: 1.125rem;
+}
+fieldset p {
+    margin: auto;
+    text-align: left;
+}
+
+form {
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 60vw;
+    max-width: 600px;
+    min-width: 300px;
+    background-color: rgba(27, 27, 50, 0.8);
+}
+
+fieldset {
+    border:none;
+    padding: 0;
+    border-bottom: 2rem;
+}
+
+input, select, textarea {
+    width:99%;
+    margin:10px 0 0 0;
+}
+
+.lenguas, .radio {
+    width:unset;
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: auto auto;
+    height: 2.5em;
+    color:white;
+    font-size: 1.1rem;
+    background-color: #3d7231;
+    border: none;
+    border-radius:2px;
+    min-width: 300px;
+    text-align: center;
 }

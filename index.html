@@ -9,20 +9,20 @@
 </head>
 <body>
     <h1 id="title">Formulario de contacto</h1>
-    <p id="description">Estamos emocionados por recibir tu solicitud, por favor verifica todos tus datos antes de enviar.</em></p>
+    <p id="description">Estamos emocionados por recibir tu solicitud,<br> por favor verifica todos tus datos antes de enviar.</em></p>
     <form id="survey-form" action='https://register-demo.freecodecamp.org'>
     <fieldset>
-        <label for="name">
-            Nombre<input id="name" type="text" placeholder="Ingrese su nombre" required>
+        <label for="name"> Nombre
+            <input id="name" type="text" placeholder="Ingrese su nombre" required>
         </label>
-        <label for="email">
-            Email<input id="email" type="email" placeholder="Ingrese su email" required>
+        <label for="email">Email
+            <input id="email" type="email" placeholder="Ingrese su email" required>
         </label>
-        <label for="number">
-            Edad<input id="number" type="number" min="18" max="60" placeholder="Edad" name="edad">
+        <label for="number">Edad
+            <input id="number" type="number" min="18" max="60" placeholder="Edad" name="edad">
         </label>
-        <label for="">
-            Cargar una foto de perfil:<input type="file" />
+        <label for="">Cargar una foto de perfil:
+            <input type="file" />
         </label>
     </fieldset>
     <fieldset>
@@ -35,17 +35,20 @@
                 <option value="4">Prefiero no decirlo
             </select>
         </label>
+        <!-- <label> -->
         Recomendarias nuestro sitio?
         <label for="recomendar-si">
-            <input id="recomendar-si" type="radio" name="recomendar" value="si">Si
+            <input class="radio" id="recomendar-si" type="radio" name="recomendar" value="si">Si
         </label>
         <label for="recomendar-talvez">
-            <input id="recomendar-talvez" type="radio" name="recomendar" value="talvez">Tal vez
+            <input class="radio" id="recomendar-talvez" type="radio" name="recomendar" value="talvez">Tal vez
         </label>
         <label for="recomendar-no">
-            <input id="recomendar-no" type="radio" name="recomendar" value="no">No
+            <input class="radio" id="recomendar-no" type="radio" name="recomendar" value="no">No
         </label>
-        <label>Cual es tu preferencia a la otra de programar?
+        <!-- </label> -->
+        <label>
+            <p>Cual es tu preferencia a la otra de programar?</p>
             <select class="preferencia">
                 <option value="">(Selecione rol)               
                 <option value="frontend">Frontend
@@ -54,16 +57,29 @@
                 <option value="noExp">No tengo experiencia 
             </select>
         </label>
-        <label>Cual de los siguiente lenguajes sabes usar?
+        <label>
+        <p>Cual de los siguiente lenguajes sabes usar?</p>
+        <label>
             <input class="lenguas" type="checkbox" name="php" value="php"> PHP
+        </label>
+        <label>
             <input class="lenguas" type="checkbox" name="html" value="html"> HTML
+        </label>
+        <label>
             <input class="lenguas" type="checkbox" name="css" value="css"> CSS
+        </label>
+        <label>
             <input class="lenguas" type="checkbox" name="python" value="python"> PYTHON
+        </label>
+        <label>
             <input class="lenguas" type="checkbox" name="cplusplus" value="cplusplus"> C++
+        </label>
+        <label>    
             <input class="lenguas" type="checkbox" name="c" value="c"> C
         </label>
+        </label>
         <label for="bio">Algun comentario o sugerencia?
-            <input id="bio" type="textarea" placeholder="Ïngrese su comentario aquí"></textarea>
+            <textarea id="bio" placeholder="Ïngrese su comentario aquí" rows="3" cols="38" ></textarea>
         </label>
     </fieldset>
     <input type="submit" value="Submit" />
